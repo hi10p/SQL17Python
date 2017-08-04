@@ -1,0 +1,14 @@
+﻿@using WebApplication.Model
+@model List<ProductType>
+<div>
+    <table>
+        <thead><tr><td style="font-size:large;padding-right:20px">Product Type</td><td style="font-size:large">Cache Detail  </td></tr></thead>
+        <tbody>
+            @foreach (ProductType item in Model)
+            {
+                string typeLog = $"(Id={item.Id}, updated at {item.Log})";
+                <tr><td>@item.Name</td><td>@typeLog</td></tr>
+            }
+        </tbody>
+    </table>
+</div>

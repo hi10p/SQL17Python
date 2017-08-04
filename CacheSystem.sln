@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Databases", "Databases", "{1ECF0094-1259-47EA-ADBB-3ACEBD5F080A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SetupInstruction", "SetupInstruction", "{479FFE65-042D-46D8-982F-13FFAB8130B7}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.txt = Readme.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{AE70BD7E-4B5E-46A2-8085-6437189F8872}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{584EC208-421C-4823-8FEA-E98483FF794D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTful.Cache", "RESTful.Cache\RESTful.Cache.csproj", "{3D290A02-4EA9-4923-84D4-CEA27A321067}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Cacher", "Database\Cacher\Cacher.sqlproj", "{9F6A42E2-EE67-4E6C-8020-AB943474F98A}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TransDB", "Database\TransDB\TransDB.sqlproj", "{D6EA4D7C-9D0F-470D-B8BB-A766A13F4A86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{584EC208-421C-4823-8FEA-E98483FF794D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{584EC208-421C-4823-8FEA-E98483FF794D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{584EC208-421C-4823-8FEA-E98483FF794D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{584EC208-421C-4823-8FEA-E98483FF794D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D290A02-4EA9-4923-84D4-CEA27A321067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D290A02-4EA9-4923-84D4-CEA27A321067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D290A02-4EA9-4923-84D4-CEA27A321067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D290A02-4EA9-4923-84D4-CEA27A321067}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F6A42E2-EE67-4E6C-8020-AB943474F98A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F6A42E2-EE67-4E6C-8020-AB943474F98A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F6A42E2-EE67-4E6C-8020-AB943474F98A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9F6A42E2-EE67-4E6C-8020-AB943474F98A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F6A42E2-EE67-4E6C-8020-AB943474F98A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F6A42E2-EE67-4E6C-8020-AB943474F98A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D6EA4D7C-9D0F-470D-B8BB-A766A13F4A86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6EA4D7C-9D0F-470D-B8BB-A766A13F4A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6EA4D7C-9D0F-470D-B8BB-A766A13F4A86}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D6EA4D7C-9D0F-470D-B8BB-A766A13F4A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6EA4D7C-9D0F-470D-B8BB-A766A13F4A86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6EA4D7C-9D0F-470D-B8BB-A766A13F4A86}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{584EC208-421C-4823-8FEA-E98483FF794D} = {AE70BD7E-4B5E-46A2-8085-6437189F8872}
+		{3D290A02-4EA9-4923-84D4-CEA27A321067} = {AE70BD7E-4B5E-46A2-8085-6437189F8872}
+		{9F6A42E2-EE67-4E6C-8020-AB943474F98A} = {1ECF0094-1259-47EA-ADBB-3ACEBD5F080A}
+		{D6EA4D7C-9D0F-470D-B8BB-A766A13F4A86} = {1ECF0094-1259-47EA-ADBB-3ACEBD5F080A}
+	EndGlobalSection
+EndGlobal

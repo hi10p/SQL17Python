@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.ajaxSetup({
+                cache: false
+            });
+            $('#refreshButton').click(function () {
+                $('#productTypeArea').load('@Url.Action("Reload", "Catalog")');
+            });
+            $('#updateButton').click(function () {
+                $.post('@Url.Action("Update", "Catalog")', $('#productTypeForm').serialize())
+                window.setTimeout(function () { $('#refreshButton').click(); $('#Name').val(''); }, 750);
+            });
+        });
+    </script>
+</head>
+<body style="font-family:Arial">
+    <div>
+        <form id="productTypeForm" action="@Url.Action("Update","Catalog")" method="post">
+            <label for="Name">Product Type Name</label>
+            <input id="Name" type="text" name="Name" />
+            <button id="updateButton" type="button">Update</button>
+        </form>
+    </div>
+    <br />
+    <br />
+    <div>
+        <input id="refreshButton" type="button" value="Load Product Type" maxlength="25" />
+    </div>
+    <div id="productTypeArea">
+    </div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+﻿CREATE MESSAGE TYPE [UpdateMessage]
+    AUTHORIZATION [dbo]
+    VALIDATION = NONE;
+
